@@ -1,0 +1,83 @@
+Problem statement:
+Many people track expenses but fail to understand spending behavior. 
+This project builds an AI-powered expense tracking system that analyzes user spending patterns, provides insights, and predicts future expenses.
+
+🧠 STEP 2 — Define Features (VERY IMPORTANT)
+✅ Core Features
+
+Add income
+
+Add expense
+
+View expense history
+
+Category wise tracking
+
+Date wise filtering
+
+✅ Analytics Features
+
+Monthly expense summary
+
+Category wise spending chart
+
+Spending trend analysis
+
+Budget vs actual comparison
+
+✅ AI Features (Later Week)
+
+Expense prediction
+
+Overspending detection
+
+Smart saving suggestions
+AI-Expense-Tracker
+│
+├── backend
+│   ├── main.py
+│   ├── database.py
+│   ├── config.py
+│   │
+│   ├── models
+│   │   ├── user_model.py
+│   │   ├── expense_model.py
+│   │   ├── income_model.py
+│   │   └── budget_model.py
+│   │
+│   ├── schemas
+│   │   ├── user_schema.py
+│   │   ├── expense_schema.py
+│   │   ├── income_schema.py
+│   │   └── budget_schema.py
+│   │
+│   ├── routes
+│   │   ├── user_routes.py
+│   │   ├── expense_routes.py
+│   │   ├── income_routes.py
+│   │   └── budget_routes.py
+│   │
+│   └── services
+│       ├── expense_service.py
+│       ├── analytics_service.py
+│       └── ml_service.py
+│
+├── frontend
+│   └── streamlit_app.py
+│
+├── analytics
+│   ├── expense_analysis.py
+│   └── trend_analysis.py
+│
+├── ml_model
+│   ├── train_model.py
+│   └── prediction.py
+│
+├── database
+│   └── expense.db
+│
+├── tests
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
