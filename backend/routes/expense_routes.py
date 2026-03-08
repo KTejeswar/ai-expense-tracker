@@ -1,10 +1,10 @@
-from fastapi import APIRouter,Depends,HTTPException,status
+from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-from database import SessionLocal
-from models.expense_model import Expense
-from schemas.expense_schema import ExpenseCreate
+from backend.database import SessionLocal
+from backend.models.expense_model import Expense
+from backend.schemas.expense_schema import ExpenseCreate
 
-router = APIRouter()
+router = APIRouter(tags=["Expenses"])
 
 
 def validate_expense_payload(payload: ExpenseCreate):
